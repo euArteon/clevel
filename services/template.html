@@ -1,0 +1,281 @@
+
+<div class="option-title inblock fullwid">
+    <div class="tab middle center">
+        <h2 id="orderNumber">Carregando</h2>                
+    </div>
+</div>
+<div class="selecionado inblock halfwid" id="shippingdata">        
+    <div class="tab middle center">
+        <h3>Código de Rastreio</h3>
+        <input type="text" class="shipping-code" id="shipping_code">
+        <input type="button" value="Enviar" id="shipping_codeBtn">
+    </div>
+</div>        
+<div class="selecionado inblock halfwid" id="nada">        
+    <div class="tab middle center">
+        <h3>Enviar mensagem</h3>
+        <select type="text" id="wppMsg" class="shipping-codet">
+            <option value="msg1">Mensagem 1</option>
+        </select>
+        <input type="button" value="Abrir Whastapp" id="wppBtn">
+        <textarea style="display: none;" id="msg1text" cols="30" rows="10">Oi, %user% 🙋🏻‍♀️ Trago boas novas sobre sua compra do produto %produto%™.
+
+Sou a Márcia, da Deatly, e vou te auxiliar durante o progresso de sua compra.
+
+O seu pedido já foi entregue a transportadora e, dentro de alguns dias, o rastreio estará disponível através do código abaixo:
+
+%code%
+
+O seu acesso à área de clientes também já está disponível. Você consegue acessar através do site https://deatly.com/login/
+
+Use o seu CPF para fazer login. 
+
+Tudo o que você precisa para acompanhar seu pedido está disponível lá . 
+
+Caso precise de mim, pode me chamar aqui.
+Combinado? 😉</textarea>
+    </div>
+</div>
+<div class="more-info inblock">
+    <div class="tab middle left">
+        <div class="info-line inblock">
+            <p>Status do envio</p>
+            <div class="info-input inblock">
+                <input type="text" id="shipping_status">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="shipping_statusBtn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p>ID do pagamento</p>
+            <div class="info-input inblock">
+                <input type="text" id="payment_id">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="payment_idBtn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p>Produto</p>
+            <div class="info-input inblock">
+                <input type="text" id="product_id">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="product_idBtn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p>Nome do produto</p>
+            <div class="info-input inblock">
+                <input type="text" id="product_name">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="product_nameBtn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p id="sku1">Sku 1</p>
+            <div class="info-input inblock">
+                <input type="text" id="v1">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="v1Btn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p id="sku2">Sku 2</p>
+            <div class="info-input inblock">
+                <input type="text" id="v2">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="v2Btn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p id="sku3">Sku 3</p>
+            <div class="info-input inblock">
+                <input type="text" id="v3">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="v3Btn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p id="sku4">Sku 4</p>
+            <div class="info-input inblock">
+                <input type="text" id="v4">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="v4Btn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p id="sku5">Sku 5</p>
+            <div class="info-input inblock">
+                <input type="text" id="v5">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="v5Btn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p>Método de Pagamento</p>
+            <div class="info-input inblock">
+                <input type="text" id="method">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="methodBtn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p>Status do Pagamento</p>
+            <div class="info-input inblock">
+                <input type="text" id="payment_status">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="payment_statusBtn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p>Parcelas</p>
+            <div class="info-input inblock">
+                <input type="text" id="installments">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="installmentsBtn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p>Valor</p>
+            <div class="info-input inblock">
+                <input type="text" id="value">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="valueBtn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p>Nome e sobrenome</p>
+            <div class="info-input inblock">
+                <input type="text" id="name">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="nameBtn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p>Nome completo</p>
+            <div class="info-input inblock">
+                <input type="text" id="fullname">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="fullnameBtn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p>Email</p>
+            <div class="info-input inblock">
+                <input type="text" id="email">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="emailBtn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p>DDD</p>
+            <div class="info-input inblock">
+                <input type="text" id="area">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="areaBtn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p>Telefone</p>
+            <div class="info-input inblock">
+                <input type="text" id="phone">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="phoneBtn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p>Documento</p>
+            <div class="info-input inblock">
+                <input type="text" id="document">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="documentBtn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p>Rua</p>
+            <div class="info-input inblock">
+                <input type="text" id="street">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="streetBtn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p>Número</p>
+            <div class="info-input inblock">
+                <input type="text" id="number">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="numberBtn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p>Complemento</p>
+            <div class="info-input inblock">
+                <input type="text" id="complement">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="complementBtn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p>Bairro</p>
+            <div class="info-input inblock">
+                <input type="text" id="neighborhood">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar"  id="neighborhoodBtn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p>Cidade</p>
+            <div class="info-input inblock">
+                <input type="text" id="city">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="cityBtn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p>Estado</p>
+            <div class="info-input inblock">
+                <input type="text" id="state">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="stateBtn">
+            </div>
+        </div>
+        <div class="info-line inblock">
+            <p>CEP</p>
+            <div class="info-input inblock">
+                <input type="text" id="zip">
+            </div>
+            <div class="info-button inblock">
+                <input type="button" value="Alterar" id="zipBtn">
+            </div>
+        </div>
+    </div>
+    <div class="space"></div>
+</div>
+<div class="space"></div>
+<script class="templateScript">
+
+</script>

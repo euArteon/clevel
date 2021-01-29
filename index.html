@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" href="https://deatly.com/checkout/images/icons/fav.webp">
+    <link rel="stylesheet" href="style.css">
+    <title>Deatly - CLevel</title>
+</head>
+<body>
+<div class="login">
+    <div class="logo-content">
+        <img src="images/branding/logo.jpg" class="login-animate">
+    </div>
+</div>
+<div class="confirmar" style="display: none;">
+    <div class="confirm-fullgrid">
+        <div class="tab center middle">
+            <h3 id="confirm-title">Deseja confirmar a alteração?</h3>
+            <p id="confirm-text">Você está alterando   de   para  .</p>
+            <div class="confirm-halfgrid inblock halfwid">
+                <div class="tab right">
+                    <input type="button" value="Cancelar" id="cancelBtn">
+                </div>
+            </div>
+            <div class="confirm-halfgrid inblock halfwid">
+                <div class="tab left">
+                    <input type="button" value="Confirmar" id="confirmBtn">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sombra" style="display: none;"></div>
+<div class="wrap" style="display: none;">
+    <div class="close" onclick="fecharWrap()">X</div>
+    <section id="loading">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </section>
+    <div class="wrap-content">
+    </div>
+</div>
+<div class="mobile-header hidden-desktop">
+    <div class="mobile-grid">
+        <div class="mobile-content">
+            <img src="images/branding/logotype.png" alt="" srcset="">
+        </div>          
+    </div>
+    <div class="mobile-grid">      
+        <div class="mobile-content">
+
+        </div>          
+    </div>
+</div>
+<div class="sidebar">
+    <div class="container">
+        <div class="sidebar-grid">
+            <div class="sidebar-row-logo">      
+                <div class="sidebar-logo-content">
+                    <img src="images/branding/logotype.png" alt="" srcset="">
+                </div>          
+            </div>
+            <div class="sidebar-row-cliente">
+                <div class="sidebar-cliente-content">
+                    <p>CLevel</p>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu-row" id="financeiro">
+                    <div class="menu-icon">
+                        <div class="menu-icon-content">        
+                            <img src="images/icons/bag.png" alt="">
+                        </div>
+                    </div>
+                    <div class="menu-option">
+                        <div class="menu-option-content">
+                            <p>Financeiro</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-row" id="buscar">
+                    <div class="menu-icon">
+                        <div class="menu-icon-content">        
+                            <img src="images/icons/truck.png" alt="">
+                        </div>
+                    </div>
+                    <div class="menu-option">
+                        <div class="menu-option-content">
+                            <p>Buscar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-row" id="ordems">
+                    <div class="menu-icon">
+                        <div class="menu-icon-content">        
+                            <img src="images/icons/call.png" alt="">
+                        </div>
+                    </div>
+                    <div class="menu-option">
+                        <div class="menu-option-content">
+                            <p>Ordems</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-row" id="trocasSB">
+                    <div class="menu-icon">
+                        <div class="menu-icon-content">        
+                            <img src="images/icons/exchange.png" alt="">
+                        </div>
+                    </div>
+                    <div class="menu-option">
+                        <div class="menu-option-content">
+                            <p>Produtos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-row" id="desistenciasSB">
+                    <div class="menu-icon">
+                        <div class="menu-icon-content">        
+                            <img src="images/icons/givenup.png" alt="">
+                        </div>
+                    </div>
+                    <div class="menu-option">
+                        <div class="menu-option-content">
+                            <p>Desistências</p>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="welcome">
+        <div class="welcome-title">
+            <div class="welcome-content">
+                <p>Bem vindo, CLevel.</p>
+            </div>
+        </div>
+        <div class="exit">
+            <div class="exit-content">
+                <input type="button" value="Sair" id="exit">
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="financeiro">            
+            <div class="section-title">
+                <div class="marca-branca"></div>
+                <p>Financeiro</p>
+            </div>
+            <div class="metrics-grid">
+                <div class="metrics-subgrid">
+                    <div class="metrics-content">
+                        <div class="metric-title">
+                            <div class="metric-title-content">
+                                <p>Caixa</p>
+                            </div>
+                        </div>
+                        <div class="show-metric">
+                            <div class="show-metric-content">
+                                <p>R$ 11.550.000,50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="metrics-grid">
+                <div class="metrics-subgrid">
+                    <div class="metrics-content">
+                        <div class="metric-title">
+                            <div class="metric-title-content">
+                                <p>Boleto pendente</p>
+                            </div>
+                        </div>
+                        <div class="show-metric">
+                            <div class="show-metric-content">
+                                <p>R$ 526.735,50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class="metrics-grid">
+                <div class="metrics-subgrid">
+                    <div class="metrics-content">
+                        <div class="metric-title">
+                            <div class="metric-title-content">
+                                <p>Total</p>
+                            </div>
+                        </div>
+                        <div class="show-metric">
+                            <div class="show-metric-content">
+                                <p>R$ 12.076.736,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class="metrics-grid">
+                <div class="metrics-subgrid">
+                    <div class="metrics-content">
+                        <div class="metric-title">
+                            <div class="metric-title-content">
+                                <p>Unidades vendidas</p>
+                            </div>
+                        </div>
+                        <div class="show-metric">
+                            <div class="show-metric-content">
+                                <p>1235</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class="metrics-grid">
+                <div class="metrics-subgrid">
+                    <div class="metrics-content">
+                        <div class="metric-title">
+                            <div class="metric-title-content">
+                                <p>Unidades boleto</p>
+                            </div>
+                        </div>
+                        <div class="show-metric">
+                            <div class="show-metric-content">
+                                <p>235</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class="metrics-grid">
+                <div class="metrics-subgrid">
+                    <div class="metrics-content">
+                        <div class="metric-title">
+                            <div class="metric-title-content">
+                                <p>Conversão boleto</p>
+                            </div>
+                        </div>
+                        <div class="show-metric">
+                            <div class="show-metric-content">
+                                <p>15%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class="metrics-grid">
+                <div class="metrics-subgrid">
+                    <div class="metrics-content">
+                        <div class="metric-title">
+                            <div class="metric-title-content">
+                                <p>Callbacks</p>
+                            </div>
+                        </div>
+                        <div class="show-metric">
+                            <div class="show-metric-content">
+                                <p>0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="compras">
+            <div class="section-title">
+                <div class="marca-branca"></div>
+                <p>Compras</p>
+            </div>
+            <div class="compras-grid">
+                <div class="ordem-title">
+                    <p>Ordem</p>
+                </div>
+                <div class="method-title">
+                    <p>Método de Pagamento</p>
+                </div>
+                <div class="pay-title">
+                    <p>Status do Pagamento</p>
+                </div>
+                <div class="product-title">
+                    <p>Produto</p>
+                </div>
+                <div class="date-title">
+                    <p>Data</p>
+                </div>
+                <div class="lines">
+                    <div class="order-line">
+                        <div class="ordem">
+                            <p>-</p>
+                        </div>
+                        <div class="method">
+                            <p>-</p>
+                        </div>
+                        <div class="pay">
+                            <p>-</p>
+                        </div>
+                        <div class="product">
+                            <p>-</p>
+                        </div>
+                        <div class="date">
+                            <p>-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+        </div>  
+<!--         <div class="alert">        
+        </div> -->
+    </div>
+</div>
+<script src="deatly.js"></script>
+</body>
+</html>

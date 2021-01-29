@@ -1,0 +1,89 @@
+<div class="section-title">
+    <div class="marca-branca"></div>
+    <p>Busca</p>
+</div>
+<div class="search-wrap">
+    <div class="search">
+        <div class="act-grid">
+            <select type="text" id="selectAct">
+                <option value="null">Selecione o que você deseja buscar</option>
+                <option value="order">Número da ordem</option>
+                <option value="document">Documento do cliente</option>
+                <option value="shipping_status">Status do transporte</option>
+            </select>
+        </div>
+        <div class="query-grid">
+            <input type="text" placeholder="Informe o dado de busca" id="queryInput">
+        </div>
+        <div class="quantity-grid">
+            <select type="text" id="quantity">
+                <option value="null">Resultados</option>
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="all">All</option>
+            </select>
+        </div>
+        <div class="search-grid">
+            <input type="button" value="GO" id="go">
+        </div>    
+    </div>
+</div>
+<div class="compras">
+    <div class="compras-grid">
+        <div class="ordem-title">
+            <p>Ordem</p>
+        </div>
+        <div class="method-title">
+            <p>Método de Pagamento</p>
+        </div>
+        <div class="pay-title">
+            <p>Status do Pagamento</p>
+        </div>
+        <div class="product-title">
+            <p>Produto</p>
+        </div>
+        <div class="date-title">
+            <p>Data</p>
+        </div>
+        <div class="lines">
+            <div class="order-line">
+                <div class="ordem">
+                    <p>-</p>
+                </div>
+                <div class="method">
+                    <p>-</p>
+                </div>
+                <div class="pay">
+                    <p>-</p>
+                </div>
+                <div class="product">
+                    <p>-</p>
+                </div>
+                <div class="date">
+                    <p>-</p>
+                </div>
+            </div>
+        </div>
+    </div>     
+</div>
+<div class="section-title">
+    <div class="marca-branca"></div>
+    <p>Listagem</p>
+</div> 
+<script class="buscarScript">
+function verificarSearch(){
+    let selAct = $('#selectAct')
+    let qty = $('#quantity')
+    let qry = $('#queryInput')
+    if((selAct.value == 'null' || qty.value == 'null') || qry.value == ''){
+        alert('Especifique todos os campos de sua busca')
+    }else{
+        go($('#selectAct').value,$('#queryInput').value,$('#quantity').value)
+    }
+}
+$('#go').onclick = () => {
+    verificarSearch()
+}
+</script>
